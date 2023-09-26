@@ -1,0 +1,62 @@
+.container {
+  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 250px;
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+  border: 2px solid red;
+}
+.container .card .card_contactless {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .card .card_contactless #contactless {
+  transform: scale(2);
+  border: 1px solid green;
+}
+.container .card .card_chip {
+  border: 1px solid white;
+  width: 50px;
+}
+.container .card .card_chip #chip {
+  transform: scale(1.5);
+}
+.container .card .card_number {
+  border: 1px solid green;
+  font-size: 36px;
+}
+.container .card .card_date_ccv {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.container .card .card_name_logo {
+  display: flex;
+  justify-content: space-between;
+}
+.container .card .card-name-logo #vendor {
+  transform: scale(1.5);
+}
+.container .form {
+  width: 450px;
+  border: 1px solid green;
+  margin-top: 30px;
+}

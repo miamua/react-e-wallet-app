@@ -1,0 +1,172 @@
+.inActive {
+  display: flex;
+  justify-content: center;
+}
+
+.active-card .container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.active-card .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 250px;
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+}
+.active-card .container .card .card-contactless {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.active-card .container .card .card-contactless #contactless {
+  transform: scale(2);
+}
+.active-card .container .card .card-chip {
+  width: 50px;
+}
+.active-card .container .card .card-chip #chip {
+  transform: scale(1.5);
+}
+.active-card .container .card .card-number {
+  font-size: 36px;
+}
+.active-card .container .card .card-date-ccv {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.active-card .container .card .card-name-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.active-card .container .card .card-name-logo #vendor {
+  transform: scale(1.5);
+}
+
+.input-form {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  width: 450px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.form .cardNum {
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form .cardName {
+  width: 100%;
+  box-sizing: border-box;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form .month {
+  width: 48%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 1%;
+  box-sizing: border-box;
+}
+
+.form .year {
+  width: 48%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 1%;
+  box-sizing: border-box;
+}
+
+.form .ccv {
+  width: 30%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.form .vendor {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.nonActive-card .container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.nonActive-card .container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 250px;
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(180, 185, 186) 0%,
+    rgb(3, 3, 3) 100%
+  );
+  filter: blur(1px);
+}
+.nonActive-card .container .card .card-contactless {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.nonActive-card .container .card .card-contactless #contactless {
+  transform: scale(2);
+}
+.nonActive-card .container .card .card-chip {
+  width: 50px;
+}
+.nonActive-card .container .card .card-chip #chip {
+  transform: scale(1.5);
+}
+.nonActive-card .container .card .card-number {
+  font-size: 36px;
+}
+.nonActive-card .container .card .card-date-ccv {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.nonActive-card .container .card .card-name-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.nonActive-card .container .card .card-name-logo #vendor {
+  transform: scale(1.5);
+}
