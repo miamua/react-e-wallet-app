@@ -6,7 +6,7 @@ export const testInfo = [
     cardName: "Test Testson",
     cardNumber: "1234 5678 9101 1123",
     expirationMonth: "05",
-    expirationYear: "2026",
+    expirationYear: "26",
     ccv: 585,
     vendor: "Master Card",
   },

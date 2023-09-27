@@ -19,7 +19,8 @@ export function AddCard({ onAddCard }) {
     if (
       name === "cardNumber" ||
       name === "expirationMonth" ||
-      name === "expirationYear"
+      name === "expirationYear" ||
+      name === "ccv"
     ) {
       const numericValue = value.replace(/\D/g, "");
       const formattedValue = numericValue.replace(/(\d{4})/g, "$1 ");
@@ -57,7 +58,6 @@ export function AddCard({ onAddCard }) {
       onAddCard(cardInfo);
     }
 
-    //setCards([...cards, cardInfo]);
     setCardInfo({
       cardNumber: "",
       cardName: "",
@@ -103,6 +103,7 @@ export function AddCard({ onAddCard }) {
               placeholder="Cardholder name"
               value={cardInfo.cardName}
               onChange={handleInputChange}
+              required
             />
             <br></br>
             <label>VALID THRU</label>
@@ -115,6 +116,7 @@ export function AddCard({ onAddCard }) {
               maxLength={2}
               value={cardInfo.expirationMonth}
               onChange={handleInputChange}
+              required
             />
             /
             <input
@@ -125,6 +127,7 @@ export function AddCard({ onAddCard }) {
               maxLength={2}
               value={cardInfo.expirationYear}
               onChange={handleInputChange}
+              required
             />
             <br></br>
             <label>CCV</label>
@@ -138,6 +141,7 @@ export function AddCard({ onAddCard }) {
               maxLength={3}
               value={cardInfo.ccv}
               onChange={handleInputChange}
+              required
             />
             <br></br>
             <label>VENDOR</label>
@@ -147,6 +151,7 @@ export function AddCard({ onAddCard }) {
               onChange={handleInputChange}
               value={cardInfo.vendor}
               name="vendor"
+              required
             >
               <option value="masterCard">MASTER CARD</option>
               <option value="visa">VISA</option>

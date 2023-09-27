@@ -16,9 +16,8 @@ export default function App() {
 
   const handleAddCard = (card) => {
     if (count < 4) {
-      // Check if count is less than 4
       setCards([...cards, card]);
-      setCount(count + 1); // Increment count
+      setCount(count + 1);
     } else {
       alert("You can have max 4 cards");
     }
